@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UV-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THINATHAYALAN</title>
+    <link rel="stylesheet" href="style.css">
+ <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script> 
+  </head>
+  <body>
+     <div id="header">
+      <div class="container">
+        <header>
+          <nav>
+            <img src="thinathayalan.png" width="200px" height="150px" class="logo">
+            <ul>
+              <li><a href="#header">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </header>
+        
+        <div class="header-text">
+          <h1>Hai, I'm <span>Thinathayalan</span><br>From Gobichettipalayam</h1>
+        </div>
+      </div>
+     </div>
+     <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="thina.JPG" >
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>Hai, My name THINATHAYALAN. I'm from Gobichettipalayam.I am currently pursuing my BE(Mechanical) in Bannari Amman Institute of Technology,Then my hobbieas are Sketching, playing cricket and Gardening.My short term goal to get placed in well reputed company and my lange term goal to get reputed position in a joined company. </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Programming Skills</span><br>C (Basic).<br>C++ (Basic).<br>Html (Basic).<br>Css (Basic).</li>
+                <li><span>Designing Software</span><br>Solidworks (Intermediate).<br>AutoCAD (Intermediate).</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2021-2024</span><span>B.E- MECHANICAL ENGINEERING:</span><br>BANNARI AMMAN INSTITUTE OF TECHNOLOGY,<br>Sathyamangalam,<br>CGPA: 8.13* (Upto 5th semester).</li>
+                <li><span>2018-2021</span><span>DIPLOMA IN MECHANICAL ENGINEERING:</span><br>Kongu Polytechnic College,<br>Perundurai,<br>Percentage : 89%.</li>
+                <li><span>2017-2018</span><span>SSCL:</span><br>Sri Venkateshwara Vidhyalaya Higher Secondary School,<br>Gobichettpalayam,<br>Percentage: 83.2%.</li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
+     <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">Resume</h1>
+          <div class="potfolio-list">
+            <div>
+              <img src="re.jpg" width="110%">
+            </div>
+          </div>
+      </div>
+     </div>
+     <div id="contact">
+      <div class="cotainer">
+        <div class="row">
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h2 class="sub-title">Contact Details</h2>
+                <p>Phone No: +91 6383288368.</p>
+            <div>
+              <p>Offical E-mail Id : thinathayalan.me20@bitsathy.ac.in</p>
+            </div>
+            <div>    
+               <p>Personal E-Mail Id: thinathayalan0@gmail.com</p>
+            </div>
+            <div>
+             <p>Linkedin Id: <a href="">https://www.linkedin.com/in/thinathayalan-k-k-a8685a227/</a></p> 
+            </div>
+            <div>
+              <p>Github Id: <a href="">https://github.com/THINAKUMAR</a></p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+<script>
+  var tablinks = document.getElementsByClassName("tab-links");
+  var tabcontents = document.getElementsByClassName("tab-contents");
+  function opentab(tabname){
+    for(tablink of tablinks){
+      tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+      tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+  }
+</script>
+  </body>
+</html>
